@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+>
+
 <h:head>
-    <title>Стартовая страница</title>
-    <h:outputStylesheet name="css/primeflex.css"/>
-    <h:outputStylesheet name="css/custom.css"/>
+    <title>Лаба 3</title>
+    <h:outputStylesheet name="stylesMain.css" library="css"/>
+    <h:outputStylesheet name="stylesResponse.css" library="css"/>
+    <h:outputScript name="jquery-3.3.1.js" library="js"/>
+    <h:outputScript name="clock.js" library="js"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"
+          type="text/css"/>
 </h:head>
+
 <h:body>
-
-        <div class="p-grid p-justify-center">
-            <div class="p-col-8 p-align-center" align="center">
-                <h3>P3232 Шахов Кирилл (BackEnd) <br>Федоров Никита(FrontEnd)</br></h3>
+    <header>
+        Иван Братчиков<br/>
+        Вариант № 20114<br/>
+        P3201<br/>
+    </header>
+    <br/>
+    <div align="center" draggable="false" style="margin-top: 10%;">
+        <article class="mainRect animated zoomIn fast">
+            <div align="center" draggable="false">
+                <canvas id="clock" title="clock" width="300px" height="300px" style="padding-top: 25px"/>
             </div>
-        </div>
-
-
-    <div class="p-grid p-justify-center">
-        <div class="p-col-8 p-align-center">
-            <p:panel header="Текущее время" style="text-align: center;">
-                <h:form>
-                    <h:outputText id="show-date" value="#{date.currentDate}"/>
-                    <p:poll interval="7" listener="#{date.updateDate}" update="show-date"/>
-                </h:form>
-            </p:panel>
-        </div>
-        <div class="p-col-6 p-align-center" align="center">
-            <p:linkButton style="width: 180px;" outcome="main" value="Перейти к главной странице"
-                          icon="fa fa-fw fa-arrow-right"/>
-        </div>
+            <br/>
+            <h:form>
+                <div align="center" draggable="false">
+                    <p:linkButton outcome="main" action="check" id="check-button" value="Дальше"
+                                  ajax="false" styleClass="buttonCheck" style="text-align: center"/>
+                </div>
+            </h:form>
+        </article>
     </div>
-
 </h:body>
 </html>
