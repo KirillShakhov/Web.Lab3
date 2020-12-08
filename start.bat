@@ -1,1 +1,1 @@
-scp -P 2222 target\lab3-1.0-SNAPSHOT.war s282927@helios.se.ifmo.ru:~/wildfly/standalone/deployments/
+scp -P 2222 target\lab3-1.0-SNAPSHOT.war s285896@helios.se.ifmo.ru:~/wildfly/standalone/deployments/
