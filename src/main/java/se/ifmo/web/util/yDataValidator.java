@@ -22,7 +22,7 @@ public class yDataValidator implements Validator {
             message.setSeverity(FacesMessage.SEVERITY_ERROR);
             throw new ValidatorException(message);
         }
-        if (!(Double.parseDouble(value.toString()) > -5 || Double.parseDouble(value.toString()) < 3)) {
+        if (!(Double.parseDouble(value.toString()) > -5 && Double.parseDouble(value.toString()) < 3)) {
             message.setSummary("Координата не лежит в допустимом диапазоне");
             message.setSeverity(FacesMessage.SEVERITY_ERROR);
             throw new ValidatorException(message);

@@ -62,21 +62,13 @@
                 </h:inputHidden>
                 <p:slider for="x-coordinate" minValue="-5" maxValue="5" step="1" display="output-x"
                           style="width: 200px; margin-top: 10px;"/>
-                <p:commandButton value = "-2" onclick = "sendR(this)" />
-                <p:commandButton value = "-1.5"  onclick = "sendR(this)" />
-                <p:commandButton value = "-1" onclick = "sendR(this)" />
-                <p:commandButton value = "-0.5" onclick = "sendR(this)" />
-                <p:commandButton value = "0" onclick = "sendR(this)" />
-                <p:commandButton value = "0.5" onclick = "sendR(this)" />
-                <p:commandButton value = "1" onclick = "sendR(this)" />
-                <p:commandButton value = "1.5" onclick = "sendR(this)" />
                 <p:message for="x-coordinate" style="margin-top: 7px"/>
             </div>
 
             <div class="p-col-4 p-align-center" align="center">
                 <p:outputLabel for="y-coordinate">Введите координату Y</p:outputLabel><br/>
                 <p:inputText id="y-coordinate" value="#{pointManager.YCoordinate}" style="margin-top: 10px;"
-                             maxlength="15" placeholder="от -3 до 5">
+                             maxlength="15" placeholder="от -5 до 3">
                         <f:validator validatorId="yDataValidator"/>
                 </p:inputText><br/>
                 <p:message for="y-coordinate" display="default"/>
@@ -86,12 +78,8 @@
                 <p:outputLabel for="radius">Выберите радиус</p:outputLabel><br/>
                 <h:outputText id="output-radius" value="#{pointManager.radius}"/><br/>
                 <h:inputHidden id="radius" value="#{pointManager.radius}"/>
-<!--                <p:slider id="radius-slider" for="radius" minValue="1" maxValue="4" step="0.5" display="output-radius"-->
-<!--                          onSlide="handleSlide(event, ui)" style="width: 200px; margin-top: 10px;"/>-->
-                <p:spinner id="paymentamount" value="#{pointManager.radius}" onchange="sendR(this)" required="true"
-                           min="1" max="3" maxlength="8" stepFactor="0.5" style="width: 100px; margin-top: 10px;">
-                    <f:validator validatorId="rDataValidator"/>
-                </p:spinner>
+                <p:slider id="radius-slider" for="radius" minValue="1" maxValue="3" step="0.5" display="output-radius"
+                          onSlide="handleSlide(event, ui)" style="width: 200px; margin-top: 10px;"/>
             </div>
 
             <div class="p-col-8" align="center">

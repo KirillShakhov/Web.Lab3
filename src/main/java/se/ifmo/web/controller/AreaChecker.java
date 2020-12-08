@@ -8,7 +8,7 @@ class AreaChecker {
     }
 
     private static boolean checkTriangle(double x, double y, double radius) {
-        return x <= 0 && x >= -radius/2 && y <= 0 && y >= -radius &&
+        return x <= 0 && x >= -radius*1/2 && y <= 0 && y >= -radius &&
                 y >= -2*x + radius;
     }
 
