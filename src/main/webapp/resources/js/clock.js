@@ -112,6 +112,7 @@ function paintClocks() {
     fillCanvas(canvasName, width, height);
     paintExtraClock(canvasName, width - 110, height / 2 - 10);
     paintClock(canvasName, width, height);
+
 }
 
 $(() => {

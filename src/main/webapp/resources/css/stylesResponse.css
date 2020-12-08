@@ -8,81 +8,10 @@ button, input:focus {
     top: 0px;
     width: 100%;
     height: 100%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-    background: linear-gradient(-45deg, #FFB74B, #c34a36, #5566DF);
     background-size: 400% 400%;
     overflow: hidden;
-}
+    background-color: #6efc4e}
 
-
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 80% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 80% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 80% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-header {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    padding: 10px 10px 10px 21px;
-    font-family: Roboto Serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-
-    color: rgba(0, 0, 0, 0.75);
-}
-
-footer {
-    position: absolute;
-    padding: 10px 10px 10px 21px;
-    bottom: 0px;
-    font-family: Roboto Serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-
-    color: rgba(0, 0, 0, 0.75);
-}
 
 main {
     position: fixed;
@@ -94,7 +23,7 @@ main {
     height: 360px;
     mix-blend-mode: hard-light;
     border-radius: 20px;
-    background-color: rgba(205, 205, 205, 0.85);
+    background-color: #6efc4e;
     font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
