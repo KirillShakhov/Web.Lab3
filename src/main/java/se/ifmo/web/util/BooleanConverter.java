@@ -1,4 +1,4 @@
-package se.ifmo.web.converter;
+package se.ifmo.web.util;
 
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;

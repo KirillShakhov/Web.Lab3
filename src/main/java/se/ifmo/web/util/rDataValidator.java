@@ -1,4 +1,4 @@
-package se.ifmo.web.validator;
+package se.ifmo.web.util;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;

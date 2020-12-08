@@ -1,4 +1,4 @@
-package se.ifmo.web.validator;
+package se.ifmo.web.util;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.component.UIComponent;
@@ -8,7 +8,6 @@ import javax.faces.validator.Validator;
 import javax.faces.validator.ValidatorException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 @FacesValidator("xDataValidator")
 public class xDataValidator implements Validator {
