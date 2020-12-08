@@ -151,7 +151,7 @@ function drawPlane(scaleParameter) {
 
         ctx.beginPath();
         ctx.moveTo(offsetX(0), offsetY(0));
-        ctx.arc(offsetX(0), offsetY(0), offsetX(1) - offsetX(0), -3 * Math.PI / 2, Math.PI, true);
+        ctx.arc(offsetX(0), offsetY(0), offsetX(1) - offsetX(0), -3 * Math.PI / 2, 0, true);
         ctx.fill();
         ctx.closePath();
     }
