@@ -136,22 +136,22 @@ function drawPlane(scaleParameter) {
 
         ctx.beginPath();
         ctx.moveTo(offsetX(0), offsetY(0));
+        ctx.lineTo(offsetX(-0.5), offsetY(0));
+        ctx.lineTo(offsetX(0), offsetY(-1));
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.moveTo(offsetX(0), offsetY(0));
+        ctx.lineTo(offsetX(0), offsetY(0.5));
+        ctx.lineTo(offsetX(-1), offsetY(0.5));
         ctx.lineTo(offsetX(-1), offsetY(0));
-        ctx.lineTo(offsetX(0), offsetY(-0.5));
         ctx.fill();
         ctx.closePath();
 
         ctx.beginPath();
         ctx.moveTo(offsetX(0), offsetY(0));
-        ctx.lineTo(offsetX(0), offsetY(-0.5));
-        ctx.lineTo(offsetX(1), offsetY(-0.5));
-        ctx.lineTo(offsetX(1), offsetY(0));
-        ctx.fill();
-        ctx.closePath();
-
-        ctx.beginPath();
-        ctx.moveTo(offsetX(0), offsetY(0));
-        ctx.arc(offsetX(0), offsetY(0), offsetX(1) - offsetX(0), 3 * Math.PI / 2, Math.PI, true);
+        ctx.arc(offsetX(0), offsetY(0), offsetX(1) - offsetX(0), -3 * Math.PI / 2, Math.PI, true);
         ctx.fill();
         ctx.closePath();
     }
