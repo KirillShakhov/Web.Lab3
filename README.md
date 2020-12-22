@@ -1,4 +1,11 @@
 # Web.Lab3
+
+[![GitHub stars][stars-shield]][stars-url]
+[![GitHub issues][issues-shield]][issues-url]
+[![GitHub][license-shield]][license-url]
+![GitHub repo size](https://img.shields.io/github/repo-size/KirillShakhov/Web.Lab3)
+![GitHub last commit](https://img.shields.io/github/last-commit/KirillShakhov/Web.Lab3)
+
 Вариант 282301
 
 **Разработать приложение на базе JavaServer Faces Framework, которое осуществляет проверку попадания точки в заданную область на координатной плоскости.**
@@ -43,3 +50,10 @@ ____
 10. Концепция ORM. Библиотеки ORM в приложениях на Java. Основные API. Интеграция ORM-провайдеров с драйверами JDBC.
 11. Библиотеки ORM Hibernate и EclipseLink. Особенности, API, сходства и отличия.
 12. Технология JPA. Особенности, API, интеграция с ORM-провайдерами.
+
+[stars-shield]: https://img.shields.io/github/stars/KirillShakhov/Web.Lab3?style=social
+[stars-url]: https://github.com/KirillShakhov/Web.Lab3/stargazers
+[issues-shield]: https://img.shields.io/github/issues/KirillShakhov/Web.Lab3
+[issues-url]: https://github.com/KirillShakhov/Web.Lab3/issues
+[license-shield]: https://img.shields.io/github/license/KirillShakhov/Web.Lab3
+[license-url]: https://github.com/KirillShakhov/Web.Lab3/blob/master/LICENSE
